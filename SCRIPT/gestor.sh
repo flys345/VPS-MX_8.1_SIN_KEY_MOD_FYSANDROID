@@ -174,12 +174,12 @@ echo -e " FECHA LOCAL ARG APLICADA!"
 gestor_fun () {
 clear
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🔰 FLYS_ANDROID_PERU 🔰 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e " ${cor[3]}             AJUSTES INTERNOS DEL VPS  "
 msg -bar
 while true; do
-echo -e "${cor[4]} [1] > \033[1;36mACTULIZAR VPS"
+echo -e "${cor[4]} [1] > \033[1;36mACTUALIZAR VPS"
 echo -e "${cor[4]} [2] > \033[1;36mREINICIAR SERVICIOS"
 echo -e "${cor[4]} [3] > \033[1;36mREINICIAR VPS"
 echo -e "${cor[4]} [4] > \033[1;36mCAMBIAR HOSTNAME VPS"
