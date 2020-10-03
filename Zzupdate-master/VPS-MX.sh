@@ -199,7 +199,7 @@ wget -O /bin/resetsshdrop https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/ma
 chmod +x /bin/resetsshdrop
 wget -O /etc/versin_script_new https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Vercion &>/dev/null
 msg -bar2
-echo -e "	\e[1;44mCAMBIAR  RESELLER\e[0m"
+echo -e "	\e[44mCAMBIAR  RESELLER\e[0m"
 msg -bar
 echo ""
 read -p "dijite su nuevo reseller |creditos: " vps
@@ -218,11 +218,11 @@ echo 'clear' >> .bashrc
 echo 'DATE=$(date +"%d-%m-%y")' >> .bashrc
 echo 'TIME=$(date +"%T")' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\033[91m      __     ______  ____        __  ____  __ " '>> .bashrc
-echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
-echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
-echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
-echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
+echo 'echo -e "\033[44m      __     ______  ____        __  ____  __ " '>> .bashrc
+echo 'echo -e "\033[44m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
+echo 'echo -e "\033[44m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
+echo 'echo -e "\033[44m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
+echo 'echo -e "\033[44m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'echo -e "	\e[1;43mMOD GRATIS -FINAL\e[0m"'>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
@@ -324,10 +324,10 @@ wget -O /bin/monitor.sh https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/mast
 chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
-echo -e "	\e[1;43m MOD VPS-MX GRATIS > Creditos: @Thony_DroidYT\e[0m"
+echo -e "	\e[44m VPS-MX BY FLYS ANDROID > Creditos: @Thony_DroidYT\e[0m"
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
-msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
+msg -ama "     [ VPS - MX - SCRIPT \033[44m ❌ MOD By @Kalix1 ❌\033[44m ]"
+msg -ama "  \033[44m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
