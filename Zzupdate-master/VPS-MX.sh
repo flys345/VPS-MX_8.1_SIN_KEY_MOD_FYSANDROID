@@ -169,12 +169,12 @@ export LANGUAGE=en_US.UTF-8\
 clear
 }
 msg -bar2
-echo -e "\033[1;97m     APLICAR PARCHES PARA CORREGIR ERRORES?" 
+echo -e "\033[44m     APLICAR PARCHES PARA CORREGIR ERRORES?" 
 msg -bar2
-echo -e "\033[1;32m 1- Escoja:(N) Para Instalacion Normal"
-echo -e "\033[1;31m 2- Escoja:(S) Si ya intento instalar el script y\n precento errores, aplique este parche."
+echo -e "\033[34m 1- Escoja:(N) Para Instalacion Normal"
+echo -e "\033[34m 2- Escoja:(S) Si ya intento instalar el script y\n precento errores, aplique este parche."
 msg -bar2
-echo -e "\033[1;39m Al preciona N continuara la instalacion Normalmente"
+echo -e "\033[34m Al preciona N continuara la instalacion Normalmente"
 msg -bar2
 read -p " [ S | N ]: " idfix64_86   
 [[ "$idfix64_86" = "s" || "$idfix64_86" = "S" ]] && idfix64_86
@@ -231,13 +231,13 @@ echo 'ver="$(cat /etc/versin_script_new)" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
 echo 'echo -e "	\e[43mVERSION:\e[0m\e[1;32m $ver" '>> .bashrc
 echo 'echo "" '>> .bashrc                                           
-echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  sudo menu "'>> .bashrc
+echo 'echo -e "\033[34m   PARA MOSTAR PANEL BASH ESCRIBA:  sudo menu "'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo 'echo -e "	\e[44;1;37mFecha del Servidor\e[0m : \e[1;33m$DATE\e[0m"' >> .bashrc
 echo 'echo -e "	\e[43;1;33mHora del Servidor\e[0m : \e[1;33m$TIME\e[0m"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo -e "\033[44m        COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
-echo -e "\033[44m                     sudo menu                        \033[44m" && msg -bar2
+echo -e "\033[34m                     sudo menu                        \033[44m" && msg -bar2
 sleep 5
 }
 ofus () {
@@ -327,18 +327,18 @@ msg -bar2
 echo -e "	\e[44m VPS-MX BY FLYS ANDROID > Creditos: @Thony_DroidYT\e[44m"
 msg -bar2
 msg -ama " \033[44m    [ VPS - MX - SCRIPT \033[44m ❌ MOD By @Kalix1 ❌\033[44m ]"
-msg -ama "  \033[44m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
+msg -ama "  \033[34m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
 [[ ${#1} -gt 2 ]] && funcao_idioma || id="$1"
  }
-Key="MOD GRATUITO, SIN MINERÍA Y OTROS."
+Key=SIN MINERIA BY FLYS ANDROID."
 REQUEST=$(echo $kalix1|$PUTO)
 echo "$IP" > /usr/bin/vendor_code
 cd $HOME
 msg -ne "Key: "
 wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Verificado" || {
-   echo -e "\033[1;32m Verificada"
+   echo -e "\033[34m Verificada"
    invalid_key
    exit
    }
