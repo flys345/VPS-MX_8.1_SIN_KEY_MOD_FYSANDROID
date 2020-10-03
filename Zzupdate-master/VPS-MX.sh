@@ -218,13 +218,13 @@ echo 'clear' >> .bashrc
 echo 'DATE=$(date +"%d-%m-%y")' >> .bashrc
 echo 'TIME=$(date +"%T")' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\033[44m      __     ______  ____        __  ____  __ " '>> .bashrc
-echo 'echo -e "\033[44m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
-echo 'echo -e "\033[44m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
-echo 'echo -e "\033[44m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
-echo 'echo -e "\033[44m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
+echo 'echo -e "\033[34m      __     ______  ____        __  ____  __ " '>> .bashrc
+echo 'echo -e "\033[34m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
+echo 'echo -e "\033[34m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
+echo 'echo -e "\033[34m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
+echo 'echo -e "\033[34m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "	\e[1;43mMOD GRATIS -FINAL\e[0m"'>> .bashrc
+echo 'echo -e "	\e[44mMOD GRATIS -FINAL\e[0m"'>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'ver="$(cat /etc/versin_script_new)" '>> .bashrc
@@ -236,8 +236,8 @@ echo 'echo ""'>> .bashrc
 echo 'echo -e "	\e[44;1;37mFecha del Servidor\e[0m : \e[1;33m$DATE\e[0m"' >> .bashrc
 echo 'echo -e "	\e[43;1;33mHora del Servidor\e[0m : \e[1;33m$TIME\e[0m"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
-echo -e "\033[1;41m                     sudo menu                        \033[0;37m" && msg -bar2
+echo -e "\033[44m        COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
+echo -e "\033[44m                     sudo menu                        \033[44m" && msg -bar2
 sleep 5
 }
 ofus () {
@@ -324,9 +324,9 @@ wget -O /bin/monitor.sh https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/mast
 chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
-echo -e "	\e[44m VPS-MX BY FLYS ANDROID > Creditos: @Thony_DroidYT\e[0m"
+echo -e "	\e[44m VPS-MX BY FLYS ANDROID > Creditos: @Thony_DroidYT\e[44m"
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[44m ❌ MOD By @Kalix1 ❌\033[44m ]"
+msg -ama " \033[44m    [ VPS - MX - SCRIPT \033[44m ❌ MOD By @Kalix1 ❌\033[44m ]"
 msg -ama "  \033[44m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
