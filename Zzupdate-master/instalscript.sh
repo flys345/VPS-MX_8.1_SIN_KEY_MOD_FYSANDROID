@@ -23,7 +23,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[44m ❌ MOD By @🔰Flys_Android ❌  \033[44m ]   "
+ msg -ama "\033[44m   [ VPS - MX - SCRIPT \033[44m ❌ MOD By @🔰Flys_Android ❌  \033[44m ]   "
  echo -e  "\033[44m               EJECUTANDO ACTULIZADOR  \033[44m "
  msg -bar2
 ## Script name
@@ -75,14 +75,14 @@ otro_fun () {
 }
 msg -bar
 echo -e "	\e[44m!ATENCION!\e[0m"
-echo -e "\e[44m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[0m"
+echo -e "\e[44m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[44m"
 msg -bar 
 echo -e "	\e[44;44mBY 🔰FlysAndroidPeru.🔰\e[0m"
 msg -bar
-	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
-	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
+	echo -e "\033[44m           ---- QUE UBUNTU ESTA USANDO ----"
+	echo -e "\033[44m  Digite solo el numero segun su respuesta: "
     msg -bar
-    echo -e "\033[1;97m Escoja la opcion deseada."
+    echo -e "\033[44m Escoja la opcion deseada."
     msg -bar
     echo " 1).- Ubuntu 16.04 "
     echo " 2).- Ubuntu 18.04 "
