@@ -23,8 +23,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[1;43m ❌ MOD By @🔰Flys_Android ❌  \033[1;43m ]   "
- echo -e  "\033[1;43m               EJECUTANDO ACTULIZADOR  \033[1;43m "
+ msg -ama "     [ VPS - MX - SCRIPT \033[44m ❌ MOD By @🔰Flys_Android ❌  \033[44m ]   "
+ echo -e  "\033[44m               EJECUTANDO ACTULIZADOR  \033[44m "
  msg -bar2
 ## Script name
 SCRIPT_NAME=vpsmxup
@@ -49,7 +49,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	rm -rf /usr/bin/vpsmxup
     wget https://raw.githubusercontent.com/flys345/VPS-MX_8.1_SIN_KEY_MOD_FYSANDROID/master/Zzupdate-master/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
 	chmod +x /usr/bin/vpsmxup
-	echo -e  "\033[1;97m              Copiando Instalador Interno "
+	echo -e  "\033[44m              Copiando Instalador Interno "
 	
 	echo "           --------------------------------"	
 	
@@ -74,10 +74,10 @@ otro_fun () {
 	echo "OK OTRO"
 }
 msg -bar
-echo -e "	\e[1;41m!ATENCION!\e[0m"
-echo -e "\e[1;43m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[0m"
+echo -e "	\e[44m!ATENCION!\e[0m"
+echo -e "\e[44m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[0m"
 msg -bar 
-echo -e "	\e[44;1;37mBY 🔰FlysAndroidPeru.🔰\e[0m"
+echo -e "	\e[44;44mBY 🔰FlysAndroidPeru.🔰\e[0m"
 msg -bar
 	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
 	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
