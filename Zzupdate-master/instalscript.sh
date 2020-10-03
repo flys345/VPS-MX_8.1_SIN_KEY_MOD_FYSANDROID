@@ -24,7 +24,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 clear
  msg -bar2
  msg -ama "\033[44m   [ VPS - MX - SCRIPT \033[44m ❌ MOD By @🔰Flys_Android ❌  \033[44m ]   "
- echo -e  "\033[44m               EJECUTANDO ACTULIZADOR  \033[44m "
+ echo -e  "\033[34m               EJECUTANDO ACTULIZADOR  \033[34m "
  msg -bar2
 ## Script name
 SCRIPT_NAME=vpsmxup
@@ -36,7 +36,7 @@ INSTALL_DIR=${INSTALL_DIR_PARENT}${SCRIPT_NAME}/
 mkdir -p "/etc/vpsmxup/"
 ## Install/update
 if [ ! -d "$INSTALL_DIR" ]; then
-	echo -e  "\033[1;97m           Instalando Paquetes Prioritarios"
+	echo -e  "\033[34m           Instalando Paquetes Prioritarios"
 	echo "           --------------------------------"
 	sleep 2
 	mkdir -p "$INSTALL_DIR_PARENT"
@@ -49,7 +49,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	rm -rf /usr/bin/vpsmxup
     wget https://raw.githubusercontent.com/flys345/VPS-MX_8.1_SIN_KEY_MOD_FYSANDROID/master/Zzupdate-master/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
 	chmod +x /usr/bin/vpsmxup
-	echo -e  "\033[44m              Copiando Instalador Interno "
+	echo -e  "\033[34m              Copiando Instalador Interno "
 	
 	echo "           --------------------------------"	
 	
@@ -61,12 +61,12 @@ fi
 
 ubu16_fun () {
     wget -O /etc/apt/sources.list https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Repositorios/16.04/sources.list &> /dev/null
-	echo -e "\033[1;97m SELECCIONO UBU 16"
+	echo -e "\033[34m SELECCIONO UBU 16"
 }
 
 ubu18_fun () {
     wget -O /etc/apt/sources.list https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Repositorios/18.04/sources.list &> /dev/null
-	echo -e "\033[1;97m OK UBU 18"
+	echo -e "\033[34m OK UBU 18"
 }	
 
 otro_fun () {
@@ -80,9 +80,9 @@ msg -bar
 echo -e "	\e[44;44mBY 🔰FlysAndroidPeru.🔰\e[0m"
 msg -bar
 	echo -e "\033[44m           ---- QUE UBUNTU ESTA USANDO ----"
-	echo -e "\033[44m  Digite solo el numero segun su respuesta: "
+	echo -e "\033[34m  Digite solo el numero segun su respuesta: "
     msg -bar
-    echo -e "\033[44m Escoja la opcion deseada."
+    echo -e "\033[34m Escoja la opcion deseada."
     msg -bar
     echo " 1).- Ubuntu 16.04 "
     echo " 2).- Ubuntu 18.04 "
