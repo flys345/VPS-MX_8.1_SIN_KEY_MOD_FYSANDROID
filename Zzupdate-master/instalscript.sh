@@ -23,8 +23,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @🔰Flys_Android ❌  \033[1;33m ]   "
- echo -e  "\033[1;97m               EJECUTANDO ACTULIZADOR  \033[1;34m "
+ msg -ama "     [ VPS - MX - SCRIPT \033[1;43m ❌ MOD By @🔰Flys_Android ❌  \033[1;43m ]   "
+ echo -e  "\033[1;43m               EJECUTANDO ACTULIZADOR  \033[1;43m "
  msg -bar2
 ## Script name
 SCRIPT_NAME=vpsmxup
@@ -75,7 +75,7 @@ otro_fun () {
 }
 msg -bar
 echo -e "	\e[1;41m!ATENCION!\e[0m"
-echo -e "\e[1;100m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[0m"
+echo -e "\e[1;43m RECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\n ESTA TOTALMENTE PROHIBIDO SU VENTA\n EN CASO QUE LO HAYAS COMPRADO -\n RECUERDA QUE TE ESTAFARON \e[0m"
 msg -bar 
 echo -e "	\e[44;1;37mBY 🔰FlysAndroidPeru.🔰\e[0m"
 msg -bar
