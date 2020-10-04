@@ -41,7 +41,7 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 }
 msg -bar
-echo -e "\033[92m -- FINALIZANDO INSTALACION DE PAQUETES NECESARIOS -- "
+echo -e "\033[44m -- FINALIZANDO INSTALACION DE PAQUETES NECESARIOS -- "
 msg -bar
 apt-get install grep -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "grep"|head -1) ]] || ESTATUS=`echo -e "\033[91mFALLO DE INSTALACION"` &>/dev/null
@@ -169,19 +169,19 @@ export LANGUAGE=en_US.UTF-8\
 clear
 }
 msg -bar2
-echo -e "\033[1;97m     APLICAR PARCHES PARA CORREGIR ERRORES?" 
+echo -e "\033[44m     APLICAR PARCHES PARA CORREGIR ERRORES?" 
 msg -bar2
-echo -e "\033[1;32m 1- Escoja:(N) Para Instalacion Normal"
-echo -e "\033[1;31m 2- Escoja:(S) Si ya intento instalar el script y\n precento errores, aplique este parche."
+echo -e "\033[105m 1- Escoja:(N) Para Instalacion Normal"
+echo -e "\033[42m 2- Escoja:(S) Si ya intento instalar el script y\n precento errores, aplique este parche."
 msg -bar2
-echo -e "\033[1;39m Al preciona N continuara la instalacion Normalmente"
+echo -e "\033[44m Al preciona N continuara la instalacion Normalmente"
 msg -bar2
 read -p " [ S | N ]: " idfix64_86   
 [[ "$idfix64_86" = "s" || "$idfix64_86" = "S" ]] && idfix64_86
 clear
 funcao_idioma () {
 msg -bar2
-figlet "    -VPS MX-" | lolcat 
+figlet "    -VPS PE-" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
@@ -199,7 +199,7 @@ wget -O /bin/resetsshdrop https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/ma
 chmod +x /bin/resetsshdrop
 wget -O /etc/versin_script_new https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Vercion &>/dev/null
 msg -bar2
-echo -e "	\e[1;44mCAMBIAR  RESELLER\e[0m"
+echo -e "	\e[44mCAMBIAR  RESELLER\e[0m"
 msg -bar
 echo ""
 read -p "dijite su nuevo reseller |creditos: " vps
@@ -218,20 +218,20 @@ echo 'clear' >> .bashrc
 echo 'DATE=$(date +"%d-%m-%y")' >> .bashrc
 echo 'TIME=$(date +"%T")' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\033[91m      __     ______  ____        __  ____  __ " '>> .bashrc
-echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
-echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
-echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
-echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
+echo 'echo -e "\033[34m      __     ______  ____        __  ____  __ " '>> .bashrc
+echo 'echo -e "\033[34m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
+echo 'echo -e "\033[34m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
+echo 'echo -e "\033[34m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
+echo 'echo -e "\033[34m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'echo -e "	\e[1;43mMOD GRATIS -FINAL\e[0m"'>> .bashrc
+echo 'echo -e "	\e[44mMOD BY FLYS ANDROID\e[0m"'>> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'ver="$(cat /etc/versin_script_new)" '>> .bashrc
-echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
+echo 'ver="$(cat /etc/versin_script_ne    FXXFFFEXE3EC5TYHBJHG       V  V BGC1Zw)" '>> .bashrc
+echo 'echo -e "\033[92m     V   RESELLER : $mess1 "'>> .bashrc
 echo 'echo -e "	\e[43mVERSION:\e[0m\e[1;32m $ver" '>> .bashrc
 echo 'echo "" '>> .bashrc                                           
-echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  sudo menu "'>> .bashrc
+echo 'echo -e "\033[97m   PARA MOSTAR PANEL BY IASH ESCRIBA:  sudo menu "'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo 'echo -e "	\e[44;1;37mFecha del Servidor\e[0m : \e[1;33m$DATE\e[0m"' >> .bashrc
 echo 'echo -e "	\e[43;1;33mHora del Servidor\e[0m : \e[1;33m$TIME\e[0m"' >> .bashrc
@@ -326,7 +326,7 @@ wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/VPS-MX/VPS-M
 msg -bar2
 echo -e "	\e[1;43m MOD BY FLYS ANDROID > Creditos: @Thony_DroidYT\e[0m"
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Flys_Android❌\033[1;33m ]"
+msg -ama "  \033[44m  [ VPS - MX - SCRIPT \033[44m ❌ MOD By @Flys_Android❌\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰          "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
